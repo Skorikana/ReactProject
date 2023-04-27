@@ -1,18 +1,30 @@
 .nav {
-  display: flex;
+  overflow: hidden;
+  position:fixed;
   justify-content: space-between;
-  background-color: black;
+  /* background-color: black; */
   color: white;
+  margin-top:1%;
+  margin-left:6%;
   padding: 15px;
   font-size: 2em;
+  text-shadow: 3px 3px 5px #000000;
 }
-
 .nav a {
-  color: white;
+  color: black(192, 15, 15);
   text-decoration: none;
 }
-body{
-  background-color:lightblue;
+.nav a:hover{
+  background: #ddd;
+  color: black;
 }
 
-
+.breaking{
+  color:red;
+  text-shadow: 3px 3px 5px #000000;
+}
+.home{
+  text-align:center;
+  color:blue;
+  text-shadow: 2px 2px 4px #000000;
+}
