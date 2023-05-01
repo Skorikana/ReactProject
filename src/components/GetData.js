@@ -1,6 +1,6 @@
 import {useEffect ,useState} from 'react';
 import GetItem from "./GetItem"
-export default function Getdata({props,country}){
+export default function Getdata({props}){
       const apiKey =process.env.REACT_APP_APIKEY ;
     
      const [news, setNews] = useState([]);
@@ -17,7 +17,7 @@ export default function Getdata({props,country}){
    }}
     useEffect(() => {
     getNews();
-       }, [props,country]);
+       }, [props]);
     return(
       <div className ="newsdisplay">
         {news.map(article => {
