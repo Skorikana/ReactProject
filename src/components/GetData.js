@@ -1,7 +1,7 @@
 import {useEffect ,useState} from 'react';
 import GetItem from "./GetItem"
 export default function Getdata({props}){
-      const apiKey =process.env.REACT_APP_APIKEY ;
+     const apiKey =process.env.REACT_APP_APIKEY ;
     
      const [news, setNews] = useState([]);
   
@@ -30,6 +30,7 @@ export default function Getdata({props}){
              description ={article.description} 
              author      ={article.author}
              url         ={article.url}
+             publishedAt ={article.publishedAt}
              urlToImage  ={article.urlToImage}/>
              </div>
              </div>
